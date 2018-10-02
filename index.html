@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body id="body">
+    <label for="toggle"></label>
+    <button id="toggle" placeholder="Toggle"  onclick="toggle()">Toggle</button>
+    <div id="text">
+        <p id="textt"></p>
+    </div>
+
+    <h3 class="brand-name">Lenovo</h3>
+    <div class="indicator"></div>
+        <div class="keyboard" id="60-percent-keyboard">
+                <!-- Row 0 -->
+                
+                <div class="keyboard__key escape fn" data-key-text="esc" id="key" onclick="type()"></div>
+                <div id="key" onclick="type()" class="keyboard__key fn" data-key-text="F1"></div>
+                <div class="keyboard__key fn" data-key-text="F2"></div>
+                <div class="keyboard__key fn" data-key-text="F3"></div>
+                <div class="keyboard__key fn" data-key-text="F4"></div>
+                <div class="keyboard__key fn" data-key-text="F5"></div>
+                <div class="keyboard__key fn" data-key-text="F6"></div>
+                <div class="keyboard__key fn" data-key-text="F7"></div>
+                <div class="keyboard__key fn" data-key-text="F8"></div>
+                <div class="keyboard__key fn" data-key-text="F9"></div>
+                <div class="keyboard__key fn" data-key-text="F10"></div>
+                <div class="keyboard__key fn" data-key-text="F11"></div>
+                <div class="keyboard__key fn" data-key-text="F12"></div>
+                <div class="keyboard__key fn" data-key-text="prtSc"></div>
+                <div class="keyboard__key fn" data-key-text="Pause"></div>
+                <div class="keyboard__key fn" data-key-text="Del"></div>
+                <div class="keyboard__key fn" data-key-text="Home"></div>
+                <div class="keyboard__key fn" data-key-text="End"></div>
+                <div class="keyboard__key fn" data-key-text="pgUP"></div>
+                <div class="keyboard__key fn" data-key-text="pgDN"></div>
+                <!-- Row 1 -->
+
+                <div class="keyboard__key escape" data-key-text="~"></div>
+                <div class="keyboard__key" data-key-text="1"></div>
+                <div class="keyboard__key" data-key-text="2"></div>
+                <div class="keyboard__key" data-key-text="3"></div>
+                <div class="keyboard__key" data-key-text="4"></div>
+                <div class="keyboard__key" data-key-text="5"></div>
+                <div class="keyboard__key" data-key-text="6"></div>
+                <div class="keyboard__key" data-key-text="7"></div>
+                <div class="keyboard__key" data-key-text="8"></div>
+                <div class="keyboard__key" data-key-text="9"></div>
+                <div class="keyboard__key" data-key-text="0"></div>
+                <div class="keyboard__key" data-key-text="-"></div>
+                <div class="keyboard__key" data-key-text="="></div>
+                <div class="keyboard__key keyboard__key--2u  " data-key-text="backspace"></div>
+                <!-- End Row 1 -->
+              
+                <!-- Start Row 2 -->
+                <div class="keyboard__key keyboard__key--1-5u  " data-key-text="tab"></div>
+                <div class="keyboard__key" data-key-text="q"></div>
+                <div class="keyboard__key" data-key-text="w"></div>
+                <div class="keyboard__key" data-key-text="e"></div>
+                <div class="keyboard__key" data-key-text="r"></div>
+                <div class="keyboard__key" data-key-text="t"></div>
+                <div class="keyboard__key" data-key-text="y"></div>
+                <div class="keyboard__key" data-key-text="u"></div>
+                <div class="keyboard__key" data-key-text="i"></div>
+                <div class="keyboard__key" data-key-text="o"></div>
+                <div class="keyboard__key" data-key-text="p"></div>
+                <div class="keyboard__key" data-key-text="["></div>
+                <div class="keyboard__key" data-key-text="]"></div>
+                <div class="keyboard__key keyboard__key--1-5u  " data-key-text="\"></div>
+                <!-- End Row 2 -->
+              
+                <!-- Start Row 3 -->
+                <div class="keyboard__key keyboard__key--1-75u  " data-key-text="caps lock"></div>
+                <div class="keyboard__key" data-key-text="a"></div>
+                <div class="keyboard__key" data-key-text="s"></div>
+                <div class="keyboard__key" data-key-text="d"></div>
+                <div class="keyboard__key" data-key-text="f"></div>
+                <div class="keyboard__key" data-key-text="g"></div>
+                <div class="keyboard__key" data-key-text="h"></div>
+                <div class="keyboard__key" data-key-text="j"></div>
+                <div class="keyboard__key" data-key-text="k"></div>
+                <div class="keyboard__key" data-key-text="l"></div>
+                <div class="keyboard__key" data-key-text=";"></div>
+                <div class="keyboard__key" data-key-text="'"></div>
+                <div class="keyboard__key keyboard__key--2-25u   keyboard__key--enter" data-key-text="enter"></div>
+                <!-- End Row 3 -->
+              
+                <!-- Start Row 4 -->
+                <div class="keyboard__key keyboard__key--2-25u  " data-key-text="shift"></div>
+                <div class="keyboard__key" data-key-text="z"></div>
+                <div class="keyboard__key" data-key-text="x"></div>
+                <div class="keyboard__key" data-key-text="c"></div>
+                <div class="keyboard__key" data-key-text="v"></div>
+                <div class="keyboard__key" data-key-text="b"></div>
+                <div class="keyboard__key" data-key-text="n"></div>
+                <div class="keyboard__key" data-key-text="m"></div>
+                <div class="keyboard__key" data-key-text=","></div>
+                <div class="keyboard__key" data-key-text="."></div>
+                <div class="keyboard__key" data-key-text="/"></div>
+                <div class="keyboard__key keyboard__key--2-75u  " data-key-text="shift"></div>
+                <!-- End Row 4 -->
+              
+                <!-- Start Row 5 -->
+                <div class="keyboard__key keyboard__key--1-25u " data-key-text="ctrl"></div>
+                <div class="keyboard__key keyboard__key--1-25u " data-key-text="Fn"></div>
+                <div class="keyboard__key keyboard__key--1-25u" data-key-text="Win"></div>
+                <div class="keyboard__key keyboard__key--6-25u" ></div>
+                <div class="keyboard__key keyboard__key--1-25u  " data-key-text="Alt"></div>
+                <div class="keyboard__key keyboard__key--1-25u  " data-key-text="-"></div>
+                <div class="keyboard__key keyboard__key--1-25u  " data-key-text="Win"></div>
+                <div class="keyboard__key keyboard__key--1-25u  " data-key-text="ctrl"></div>
+                <!-- End Row 5 -->
+              </div>
+</body>
+</html>
