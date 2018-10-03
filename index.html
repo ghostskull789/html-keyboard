@@ -9,19 +9,16 @@
     <script src="main.js"></script>
 </head>
 <body id="body">
-    <label for="toggle"></label>
-    <button id="toggle" placeholder="Toggle"  onclick="toggle()">Toggle</button>
-    <div id="text">
-        <p id="textt"></p>
-    </div>
+    <button id="toggle"  onclick="toggle()">Toggle</button>
+    <input type="text" id="text" placeholder="Type something on Keyboard">
 
     <h3 class="brand-name">Lenovo</h3>
     <div class="indicator"></div>
-        <div class="keyboard" id="60-percent-keyboard">
+        <div class="keyboard" id="keyboard">
                 <!-- Row 0 -->
                 
                 <div class="keyboard__key escape fn" data-key-text="esc" id="key" onclick="type()"></div>
-                <div id="key" onclick="type()" class="keyboard__key fn" data-key-text="F1"></div>
+                <div id="key" class="keyboard__key fn" data-key-text="F1"></div>
                 <div class="keyboard__key fn" data-key-text="F2"></div>
                 <div class="keyboard__key fn" data-key-text="F3"></div>
                 <div class="keyboard__key fn" data-key-text="F4"></div>
@@ -35,7 +32,7 @@
                 <div class="keyboard__key fn" data-key-text="F12"></div>
                 <div class="keyboard__key fn" data-key-text="prtSc"></div>
                 <div class="keyboard__key fn" data-key-text="Pause"></div>
-                <div class="keyboard__key fn" data-key-text="Del"></div>
+                <div class="keyboard__key fn" id="del" data-key-text="Del"></div>
                 <div class="keyboard__key fn" data-key-text="Home"></div>
                 <div class="keyboard__key fn" data-key-text="End"></div>
                 <div class="keyboard__key fn" data-key-text="pgUP"></div>
@@ -55,7 +52,7 @@
                 <div class="keyboard__key" data-key-text="0"></div>
                 <div class="keyboard__key" data-key-text="-"></div>
                 <div class="keyboard__key" data-key-text="="></div>
-                <div class="keyboard__key keyboard__key--2u  " data-key-text="backspace"></div>
+                <div class="keyboard__key keyboard__key--2u " id="backspace" data-key-text="backspace"></div>
                 <!-- End Row 1 -->
               
                 <!-- Start Row 2 -->
@@ -76,7 +73,7 @@
                 <!-- End Row 2 -->
               
                 <!-- Start Row 3 -->
-                <div class="keyboard__key keyboard__key--1-75u  " data-key-text="caps lock"></div>
+                <div class="keyboard__key keyboard__key--1-75u" data-key-text="caps lock"></div>
                 <div class="keyboard__key" data-key-text="a"></div>
                 <div class="keyboard__key" data-key-text="s"></div>
                 <div class="keyboard__key" data-key-text="d"></div>
@@ -110,7 +107,7 @@
                 <div class="keyboard__key keyboard__key--1-25u " data-key-text="ctrl"></div>
                 <div class="keyboard__key keyboard__key--1-25u " data-key-text="Fn"></div>
                 <div class="keyboard__key keyboard__key--1-25u" data-key-text="Win"></div>
-                <div class="keyboard__key keyboard__key--6-25u" ></div>
+                <div class="keyboard__key keyboard__key--6-25u" data-key-text=" "></div>
                 <div class="keyboard__key keyboard__key--1-25u  " data-key-text="Alt"></div>
                 <div class="keyboard__key keyboard__key--1-25u  " data-key-text="-"></div>
                 <div class="keyboard__key keyboard__key--1-25u  " data-key-text="Win"></div>
