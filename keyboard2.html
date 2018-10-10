@@ -1,0 +1,185 @@
+<html>
+
+<head>
+    <title>HTML Keyboard v4</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="functions.js"></script>
+
+    
+</head>
+
+<body>
+    <div class="controls">
+        <button  onclick="noColor()">Default</button>
+        <button  onclick="withColor()">Color</button>
+        <button  onclick="custom()">Custom</button>
+    </div>
+
+    <div style="text-align: center">
+        <textarea name="text" cols="80" rows="5" style="font-size: 20px;" id="text" disabled></textarea>
+       
+    </div>
+    <div>
+        <table id="table" style="background: white">
+            
+            <tr id="tr1">
+                <td class="red" key="">Esc</td>
+                <td class="orange" key="">F1</td>
+                <td class="orange" key="">F2</td>
+                <td class="orange" key="">F3</td>
+                <td class="orange" key="">F4</td>
+
+                <td class="no-border"></td>
+
+                <td class="orange" key="">F5</td>
+                <td class="orange" key="">F6</td>
+                <td class="orange" key="">F7</td>
+                <td class="orange" key="">F8</td>
+
+                <td class="no-border"></td>
+
+                <td class="orange" key="">F9</td>
+                <td class="orange" key="">F10</td>
+                <td class="orange" key="">F11</td>
+                <td class="orange" key="">F12</td>
+
+                <td class="no-border"></td>
+
+                <td class="grey" key="">Print<br>screen</td>
+                <td class="grey" key="SCROLLLOCK">Scroll<br>lock</td>
+                <td class="grey" key="">Pause/<br>break</td>
+
+                <td class="no-border"></td>
+                <td class="no-border"></td>
+
+                <td class="grey">Num<br>lock<br>
+                    <div class="led" id="indicator1"></div>
+                </td>
+                <td class="grey">Caps<br>lock<br>
+                    <div class="led" id="indicator2"></div>
+                </td>
+                <td class="grey">Scrol<br>lock<br>
+                    <div class="led" id="indicator3"></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="30" class="no-border"></td>
+            </tr>
+            <tr id="tr2">
+                <td class="blue" class="blue" key="~">`<br><span>~</span></td>
+                <td class="blue" key="1">1<br><span>!</span></td>
+                <td class="blue" key="2">2<br><span>@</span></td>
+                <td class="blue" key="3">3<br><span>#</span></td>
+                <td class="blue" key="4">4<br><span>$</span></td>
+                <td class="blue" key="5">&nbsp;5<br><span>&nbsp;%</span></td>
+                <td class="blue" key="6">6<br><span>^</span></td>
+                <td class="blue" key="7">7<br><span>&</span></td>
+                <td class="blue" key="8">8<br><span>*</span></td>
+                <td class="blue" key="9">9<br><span>(</span></td>
+                <td class="blue" key="0">0&nbsp;<br><span>)</span></td>
+                <td class="blue" key="-">_<br><span>-</span></td>
+                <td class="blue" key="=">+<br><span>=</span></td>
+                <td colspan="2" class="brown" key="BACKSPACE">BackSpace</td>
+                <td class="no-border"></td>
+                <td class="pink" key="">Insert</td>
+                <td class="pink" key="">Home</td>
+                <td class="pink" key="">Page<br>up</td>
+                <td class="no-border"></td>
+                <td class="brown" key="NUMLOCK">Num<br>Lock</td>
+                <td class="brown" key="/">/<br></td>
+                <td class="brown" key="*">*<br></td>
+                <td class="brown" key="-">-<br></td>
+            </tr>
+            <tr class="green">
+                <td colspan="2" class="brown" key="">Tab</td>
+                <td key="q">Q</td>
+                <td key="w">W</td>
+                <td key="e">E</td>
+                <td key="r">R</td>
+                <td key="t">T</td>
+                <td key="y">Y</td>
+                <td key="u">U</td>
+                <td key="i">I</td>
+                <td key="o">O</td>
+                <td key="p">P</td>
+                <td key="{">{<br>[</td>
+                <td key="}">}<br>]</td>
+                <td class="brown" key="\">|<br>\</td>
+                <td class="no-border no-bg"></td>
+                <td class="pink" key="DEL">Del</td>
+                <td class="pink" key="">End</td>
+                <td class="pink" key="">Page<br>down</td>
+                <td class="no-border no-bg"></td>
+                <td class="blue" key="7">7</td>
+                <td class="blue" key="8">8</td>
+                <td class="blue" key="9">9</td>
+                <td rowspan="2" class="brown" key="+">+</td>
+            </tr>
+            <tr class="green">
+                <td colspan="2" class="brown" key="CAPSLOCK" id="capslock">Caps Lock</td>
+                <td key="a">A</td>
+                <td key="s">S</td>
+                <td key="d">D</td>
+                <td key="f">F</td>
+                <td key="g">G</td>
+                <td key="h">H</td>
+                <td key="j">J</td>
+                <td key="k">K</td>
+                <td key="l">L</td>
+                <td key=";">:<br>;</td>
+                <td key="'">"<br>'</td>
+                <td colspan="2" class="brown" key="ENTER">Enter</td>
+                <td class="no-border no-bg" colspan="5"></td>
+                <td class="blue" key="4">4</td>
+                <td class="blue" key="5">5</td>
+                <td class="blue" key="6">6</td>
+            </tr>
+            <tr class="green">
+                <td colspan="3" class="brown" key="">Shift</td>
+                <td key="z">Z</td>
+                <td key="x">X</td>
+                <td key="c">C</td>
+                <td key="v">V</td>
+                <td key="b">B</td>
+                <td key="n">N</td>
+                <td key="m">M</td>
+                <td key=",">,</td>
+                <td key=">">><br>.</td>
+                <td key="?">?<br>/</td>
+                <td key="^">^</td>
+                <td class="brown" key="">Shift</td>
+                <td class="no-border no-bg"></td>
+                <td class="no-border no-bg"></td>
+                <td class="purple" key="">^</td>
+                <td class="no-border no-bg"></td>
+                <td class="no-border no-bg"></td>
+                <td class="blue" key="1">1</td>
+                <td class="blue" key="2">2</td>
+                <td class="blue" key="3">3</td>
+                <td rowspan="2" class="brown" key="ENTER">E<br>N<br>T<br>E<br>R</td>
+            </tr>
+            <tr class="brown">
+                <td colspan="2" key="">Ctrl</td>
+                <td key="">Win</td>
+                <td key="">Alt</td>
+                <td colspan="7" key=" "></td>
+                <td key="">Alt</td>
+                <td key="">&#9776;</td>
+                <td key="=">=</td>
+                <td key="">Ctrl</td>
+                <td class="no-border no-bg"></td>
+                <td class="purple">
+                    <</td>
+                        <td class="purple" style="transform: rotate(180deg);box-shadow: none" key="">^</td>
+                        <td class="purple" key="">></td>
+                        <td class="no-border no-bg"></td>
+                        <td colspan="2" class="blue" key="0">0</td>
+                        <td class="blue" key="DEL">.<br>Del</td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script>
+   
+</script>
+</html>
